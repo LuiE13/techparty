@@ -1,0 +1,54 @@
+.telaFundo{
+    width: 500%;
+    height: 150px;
+    background-color: aqua;
+    display: flex;
+    
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#o2{
+    transform: translateY(220%);
+}
+#o4{
+    transform: translateY(220%);
+}#o6{
+    transform: translateY(220%);
+}#o8{
+    transform: translateY(220%);
+}
+
+.boneco{
+    position: absolute;
+    width: 43px;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid black;
+    text-align: center;
+    z-index: 101;
+}
+#boneco2{
+    top:82px
+}
+#boneco3{
+    top:119px
+    
+}
+#boneco4{
+    top:156px
+}
+
+.obstc{
+    width: 0.3%;
+    height: 30%;
+    background-color: red;
+    border: 1px solid black;
+    
+}
