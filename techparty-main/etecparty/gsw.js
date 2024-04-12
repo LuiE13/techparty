@@ -1,41 +1,33 @@
-// let elCoordenadas
-// let el
-// function vsfd(params) {
-//     el = document.getElementById('o1');
-// // utiliza método
-//     elCoordenadas = el.getBoundingClientRect();
-// }
-
 
 addEventListener('keypress',function name(event) {
     if (event.key === 'c') {
-        bineco2 = document.getElementById('boneco2') 
-        bineco = document.getElementById('boneco1') 
+        boneco2 = document.getElementById('boneco2') 
+        boneco = document.getElementById('boneco1') 
         clearInterval(timed2)
         clearInterval(times2)
         if (timed2!=null) {
             times2 = setInterval(sub2,5)
             timed2=null
         } else {
-            timed2 = setInterval(dsc2,5)
+            timed2 = setInterval(dsc2,5)    
         }
         
         function dsc2() {
             
-            let fimcoli2=colizao2-45
-            if (obst[1].offsetLeft<colizao2 && bineco2.offsetTop>=116 && obst[1].offsetLeft>fimcoli2){
-                bineco2.style.top=altura2+"px"
-            } else if (obst[3].offsetLeft<colizao2 && bineco2.offsetTop>=116 && obst[3].offsetLeft>fimcoli2){
-                bineco2.style.top=altura2+"px"
-            } else if (obst[5].offsetLeft<colizao2 && bineco2.offsetTop>=116 && obst[5].offsetLeft>fimcoli2){
-                bineco2.style.top=altura2+"px"
-            } else if (obst[7].offsetLeft<colizao2 && bineco2.offsetTop>=116 && obst[7].offsetLeft>fimcoli2){
-                bineco2.style.top=altura2+"px"
+            let fimcoli2 = colizao2 - 45
+            if (obst[1].offsetLeft < colizao2 && boneco2.offsetTop >= 116 && obst[1].offsetLeft > fimcoli2){
+                boneco2.style.top = altura2 + "px"
+            } else if (obst[3].offsetLeft<colizao2 && boneco2.offsetTop>=116 && obst[3].offsetLeft>fimcoli2){
+                boneco2.style.top = altura2 + "px"
+            } else if (obst[5].offsetLeft<colizao2 && boneco2.offsetTop>=116 && obst[5].offsetLeft>fimcoli2){
+                boneco2.style.top = altura2 + "px"
+            } else if (obst[7].offsetLeft<colizao2 && boneco2.offsetTop>=116 && obst[7].offsetLeft>fimcoli2){
+                boneco2.style.top = altura2 + "px"
             }else if (altura2>=158) {
                 clearInterval(timed2)
             } else {
-                altura2+=2
-                bineco2.style.top=altura2+"px"
+                altura2 += 2
+                boneco2.style.top=altura2+"px"
             }
         }
         
@@ -48,25 +40,20 @@ addEventListener('keypress',function name(event) {
             let fimcoli2=colizao2-45
             
             
-            if (obst[0].offsetLeft<colizao2 && bineco2.offsetTop<=92 && obst[0].offsetLeft>fimcoli2){
-                bineco2.style.top=altura2+"px"
-            } else if (obst[2].offsetLeft<colizao2 && bineco2.offsetTop<=92 && obst[2].offsetLeft>fimcoli2){
-                bineco2.style.top=altura2+"px"
-            } else if (obst[4].offsetLeft<colizao2 && bineco2.offsetTop<=92 && obst[4].offsetLeft>fimcoli2){
-                bineco2.style.top=altura2+"px"
-            } else if (obst[6].offsetLeft<colizao2 && bineco2.offsetTop<=92 && obst[6].offsetLeft>fimcoli2){
-                bineco2.style.top=altura2+"px"
-            } else if (altura2==45) {
-                
+            if (obst[0].offsetLeft < colizao2 && boneco2.offsetTop <= 92 && obst[0].offsetLeft > fimcoli2){
+                boneco2.style.top=altura2+"px"
+            } else if (obst[2].offsetLeft < colizao2 && boneco2.offsetTop <= 92 && obst[2].offsetLeft > fimcoli2){
+                boneco2.style.top = altura2 + "px"
+            } else if (obst[4].offsetLeft < colizao2 && boneco2.offsetTop <= 92 && obst[4].offsetLeft > fimcoli2){
+                boneco2.style.top = altura2 + "px"
+            } else if (obst[6].offsetLeft < colizao2 && boneco2.offsetTop <= 92 && obst[6].offsetLeft > fimcoli2){
+                boneco2.style.top = altura2 + "px"
+            } else if (altura2 == 45) {
                 clearInterval(timed2)
             } else {
                 altura2-=2
-                
-                bineco2.style.top=altura2+"px"
+                boneco2.style.top=altura2+"px"
             }
-            
-            
-            
         }
     }  
 
@@ -74,8 +61,8 @@ addEventListener('keypress',function name(event) {
 
 
     if (event.key === 'a') {
-        bineco2 = document.getElementById('boneco2') 
-        bineco = document.getElementById('boneco1') 
+         
+        boneco = document.getElementById('boneco1') 
         clearInterval(timed)
         clearInterval(times)
         if (timed!=null) {
@@ -88,19 +75,19 @@ addEventListener('keypress',function name(event) {
         function dsc() {
             
             let fimcoli=colizao1-45
-            if (obst[1].offsetLeft<colizao1 && bineco.offsetTop>=116 && obst[1].offsetLeft>fimcoli){
-                bineco.style.top=altura+"px"
-            } else if (obst[3].offsetLeft<colizao1 && bineco.offsetTop>=116 && obst[3].offsetLeft>fimcoli){
-                bineco.style.top=altura+"px"
-            } else if (obst[5].offsetLeft<colizao1 && bineco.offsetTop>=116 && obst[5].offsetLeft>fimcoli){
-                bineco.style.top=altura+"px"
-            } else if (obst[7].offsetLeft<colizao1 && bineco.offsetTop>=116 && obst[7].offsetLeft>fimcoli){
-                bineco.style.top=altura+"px"
+            if (obst[1].offsetLeft<colizao1 && boneco.offsetTop>=116 && obst[1].offsetLeft>fimcoli){
+                boneco.style.top=altura+"px"
+            } else if (obst[3].offsetLeft<colizao1 && boneco.offsetTop>=116 && obst[3].offsetLeft>fimcoli){
+                boneco.style.top=altura+"px"
+            } else if (obst[5].offsetLeft<colizao1 && boneco.offsetTop>=116 && obst[5].offsetLeft>fimcoli){
+                boneco.style.top=altura+"px"
+            } else if (obst[7].offsetLeft<colizao1 && boneco.offsetTop>=116 && obst[7].offsetLeft>fimcoli){
+                boneco.style.top=altura+"px"
             }else if (altura>=158) {
                 clearInterval(timed)
             } else {
                 altura+=2
-                bineco.style.top=altura+"px"
+                boneco.style.top=altura+"px"
             }
         }
         
@@ -113,21 +100,21 @@ addEventListener('keypress',function name(event) {
             let fimcoli=colizao1-45
             
             
-            if (obst[0].offsetLeft<colizao1 && bineco.offsetTop<=92 && obst[0].offsetLeft>fimcoli){
-                bineco.style.top=altura+"px"
-            } else if (obst[2].offsetLeft<colizao1 && bineco.offsetTop<=92 && obst[2].offsetLeft>fimcoli){
-                bineco.style.top=altura+"px"
-            } else if (obst[4].offsetLeft<colizao1 && bineco.offsetTop<=92 && obst[4].offsetLeft>fimcoli){
-                bineco.style.top=altura+"px"
-            } else if (obst[6].offsetLeft<colizao1 && bineco.offsetTop<=92 && obst[6].offsetLeft>fimcoli){
-                bineco.style.top=altura+"px"
+            if (obst[0].offsetLeft<colizao1 && boneco.offsetTop<=92 && obst[0].offsetLeft>fimcoli){
+                boneco.style.top=altura+"px"
+            } else if (obst[2].offsetLeft<colizao1 && boneco.offsetTop<=92 && obst[2].offsetLeft>fimcoli){
+                boneco.style.top=altura+"px"
+            } else if (obst[4].offsetLeft<colizao1 && boneco.offsetTop<=92 && obst[4].offsetLeft>fimcoli){
+                boneco.style.top=altura+"px"
+            } else if (obst[6].offsetLeft<colizao1 && boneco.offsetTop<=92 && obst[6].offsetLeft>fimcoli){
+                boneco.style.top=altura+"px"
             } else if (altura==45) {
                 
-                clearInterval(timed)
+                clearInterval(times)
             } else {
                 altura-=2
                 
-                bineco.style.top=altura+"px"
+                boneco.style.top=altura+"px"
             }
             
             
@@ -145,45 +132,52 @@ let times2=null
 let altura=45 
 let altura2=81
 let obst 
+
 obst = document.getElementsByClassName('obstc')
-let bineco 
-let bineco2,bineco3,bineco4
-let fundo
+
+let boneco 
+let boneco2,boneco3,boneco4
 let id=null
 let idb1=null,idb2=null,idb3=null,idb4=null
 let pos1=0
 let posf=0
 let pos2=0,pos3=0,pos4=0
+
 let colizao2  
 colizao2 = posf+pos2+45
+
 let colizao1
 colizao1 = posf+pos1+45
+
 let colizao3
 colizao3 = posf+pos3+45
+
 let colizao4
 colizao4 = posf+pos4+45
+
 let vsfd,vsfd2,vsfd3,vsfd4
+
 function tmncbixin() {
-    bineco = document.getElementById('boneco1') 
-    bineco2 = document.getElementById('boneco2') 
-    bineco3 = document.getElementById('boneco3')
-    bineco4 = document.getElementById('boneco4')
+    boneco = document.getElementById('boneco1') 
+    boneco2 = document.getElementById('boneco2') 
+    boneco3 = document.getElementById('boneco3')
+    boneco4 = document.getElementById('boneco4')
     clearInterval(idb1)
     clearInterval(idb2)
     clearInterval(idb3)
     clearInterval(idb4)
    clearInterval(id)
 
-    
+    id = setInterval(andarobj,5)
     idb1 = setInterval(andarb1,5)
     idb2 = setInterval(andarb2,5)
     idb3 = setInterval(andarb3,5)
     idb4 = setInterval(andarb4,5)
-    id = setInterval(andarobj,5)
+    
     function andarobj() {
-        if ((pos1>=602 || pos1<=-45.5) &&  (pos2>=602  || pos2<-45.5 )&& (pos3>=602  || pos3<-45.5) && (pos4>=602  || pos4<-45.5)) {
+        if ((pos1>=602 || pos1<=-45.5) &&  (pos2>=602  || pos2<-45.5 ) && (pos3>=602  || pos3<-45.5) && (pos4>=602  || pos4<-45.5)) {
             posf+=2
-        } else  {
+    } else  {
             posf+=1
         }
         for (let index = 0; index < obst.length; index++) {
@@ -200,30 +194,36 @@ function tmncbixin() {
         
         colizao1 = posf+pos1+45
         
-        if(pos1<-45.5 ){
-            bineco.remove()
-            
-            clearInterval(idb1) 
-        }
-        
-        if (obst[0].offsetLeft==colizao1 && bineco.offsetTop<=92){  
+        // for (let index = 0; index < obst.length; index++) {
+        //     while (obst[index].offsetLeft==colizao1) {
+                
+        //     }
+        // }
+
+        if (obst[0].offsetLeft==colizao1 && (boneco.offsetTop<=92 || boneco.offsetTop>=116)){  
             vsfd=true
-            
-        } else if (obst[2].offsetLeft==colizao1 && bineco.offsetTop<=92){
-            vsfd=true    
-        } else if (obst[4].offsetLeft==colizao1 && bineco.offsetTop<=92){ 
+            console.log(obst[0].offsetLeft+" "+colizao1+" "+pos1+" "+posf+" colizao obj 1")
+        } else if (obst[2].offsetLeft==colizao1 && boneco.offsetTop<=92){
             vsfd=true  
-        } else if (obst[6].offsetLeft==colizao1 && bineco.offsetTop<=92){
+            console.log(obst[2].offsetLeft+" "+colizao1+" "+pos1+" "+posf+" colizao obj 2")  
+        } else if (obst[4].offsetLeft==colizao1 && boneco.offsetTop<=92){ 
+            vsfd=true  
+            console.log(obst[4].offsetLeft+" "+colizao1+" "+pos1+" "+posf+" colizao obj 3")
+        } else if (obst[6].offsetLeft==colizao1 && boneco.offsetTop<=92){
             vsfd=true
-        } else if (obst[1].offsetLeft==colizao1 && bineco.offsetTop>=116){
+            console.log(obst[6].offsetLeft+" "+colizao1+" "+pos1+" "+posf+" colizao obj 4")
+        } else if (obst[1].offsetLeft==colizao1 && boneco.offsetTop>=116){
             vsfd=true
-            alert(pos1+" "+pos3)
-        }else if (obst[3].offsetLeft==colizao1 && bineco.offsetTop>=116){
+            console.log(obst[1].offsetLeft+" "+colizao1+" "+pos1+" "+posf+" colizao obj 5")
+        }else if (obst[3].offsetLeft==colizao1 && boneco.offsetTop>=116){
             vsfd=true
-        }else if (obst[5].offsetLeft==colizao1 && bineco.offsetTop>=116){
+            console.log(obst[3].offsetLeft+" "+colizao1+" "+pos1+" "+posf+" colizao obj 6")
+        }else if (obst[5].offsetLeft==colizao1 && boneco.offsetTop>=116){
             vsfd=true
-        }else if (obst[7].offsetLeft==colizao1 && bineco.offsetTop>=116){
+            console.log(obst[5].offsetLeft+" "+colizao1+" "+pos1+" "+posf+" colizao obj 7")
+        }else if (obst[7].offsetLeft==colizao1 && boneco.offsetTop>=116){
             vsfd=true
+            console.log(obst[7].offsetLeft+" "+colizao1+" "+pos1+" "+posf+" colizao obj 8")
         }else{
             vsfd=false
         }
@@ -231,56 +231,66 @@ function tmncbixin() {
         if (pos1==1400) {
             clearInterval(idb1)
         }else if (vsfd==true) {
-            // alert(vsfd+" "+colizao1+" "+obst[4].offsetLeft)
-            // alert(vsfd+" "+pos1+" "+posf)
-            if ((pos1>=602 || pos1<-45) &&  (pos2>=602  || pos2<-45 )&& (pos3>=602  || pos3<-45) && (pos4>=602  || pos4<-45)) {
-                pos1-=2
-                bineco.style.left=pos1+"px"
+            if ((pos1>=602 || pos1<-45) && (pos2>=602  || pos2<-45 ) && (pos3>=602  || pos3<-45) && (pos4>=602  || pos4<-45)) {
+                pos1-=1
+                boneco.style.left=pos1+"px"
+                console.log(pos1+" pos1")
             }else{
                 pos1-=1
-                bineco.style.left=pos1+"px"
+                boneco.style.left=pos1+"px"
+                console.log(pos1+" pos1")
             }
             
         }else {
-            if (pos1>601 & posf>5045) {
-                pos1+=2
-                bineco.style.left=pos1+"px"
-                
+            if (pos1>601 & posf>5400) {
+
+                pos1+=1
+                boneco.style.left=pos1+"px"
+                console.log(pos1+" pos1")
             } else if (pos1<=601 ) {
+
               pos1+=1
-              bineco.style.left=pos1+"px"
+              boneco.style.left=pos1+"px"
+              console.log(pos1+" pos1")
             }
         } 
-        
+        if(pos1<-45.5 ){
+            boneco.remove()
+            console.log(pos1+" pos1")
+            clearInterval(idb1) 
+        }
         
     }
     function andarb2() {
         
         
         colizao2 = posf+pos2+45
-        if(pos2<-45.5 ){
-            
-            bineco2.remove()
-            clearInterval(idb2) 
-        }
         
-        if (obst[0].offsetLeft==colizao2 && bineco2.offsetTop<=92){  
+        
+        if (obst[0].offsetLeft==colizao2 && boneco2.offsetTop<=92){  
             vsfd2=true
-            
-        } else if (obst[2].offsetLeft==colizao2 && bineco2.offsetTop<=92){
-            vsfd2=true    
-        } else if (obst[4].offsetLeft==colizao2 && bineco2.offsetTop<=92){ 
+            console.log(obst[0].offsetLeft+" "+colizao2+" "+pos1+" "+posf+" colizao obj 1")
+        } else if (obst[2].offsetLeft==colizao2 && boneco2.offsetTop<=92){
+            vsfd2=true   
+            console.log(obst[2].offsetLeft+" "+colizao2+" "+pos1+" "+posf+" colizao obj 1") 
+        } else if (obst[4].offsetLeft==colizao2 && boneco2.offsetTop<=92){ 
             vsfd2=true  
-        } else if (obst[6].offsetLeft==colizao2 && bineco2.offsetTop<=92){
+            console.log(obst[4].offsetLeft+" "+colizao2+" "+pos1+" "+posf+" colizao obj 1")
+        } else if (obst[6].offsetLeft==colizao2 && boneco2.offsetTop<=92){
             vsfd2=true
-        } else if (obst[1].offsetLeft==colizao2 && bineco2.offsetTop>=116){
+            console.log(obst[6].offsetLeft+" "+colizao2+" "+pos1+" "+posf+" colizao obj 6 boneco2")
+        } else if (obst[1].offsetLeft==colizao2 && boneco2.offsetTop>=116){
             vsfd2=true
-        }else if (obst[3].offsetLeft==colizao2 && bineco2.offsetTop>=116){
+            console.log(obst[1].offsetLeft+" "+colizao2+" "+pos1+" "+posf+" colizao obj 1")
+        }else if (obst[3].offsetLeft==colizao2 && boneco2.offsetTop>=116){
             vsfd2=true
-        }else if (obst[5].offsetLeft==colizao2 && bineco2.offsetTop>=116){
+            console.log(obst[3].offsetLeft+" "+colizao2+" "+pos1+" "+posf+" colizao obj 1")
+        }else if (obst[5].offsetLeft==colizao2 && boneco2.offsetTop>=116){
             vsfd2=true
-        }else if (obst[7].offsetLeft==colizao2 && bineco2.offsetTop>=116){
+            console.log(obst[5].offsetLeft+" "+colizao2+" "+pos1+" "+posf+" colizao obj 1")
+        }else if (obst[7].offsetLeft==colizao2 && boneco2.offsetTop>=116){
             vsfd2=true
+            console.log(obst[7].offsetLeft+" "+colizao2+" "+pos1+" "+posf+" colizao obj 1")
         }else{
             vsfd2=false
         }
@@ -290,25 +300,33 @@ function tmncbixin() {
         }else if (vsfd2==true) {
             // alert(vsfd+" "+colizao1+" "+obst[4].offsetLeft)
             // alert(vsfd+" "+pos2+" "+posf)
-            if ((pos1>=602 || pos1<-45) && (pos2>=602  || pos2<-45 )&& (pos3>=602  || pos3<-45) && (pos4>=602  || pos4<-45)) {
-                pos2-=2
-                bineco2.style.left=pos2+"px"
+            if ((pos1>=602 || pos1<-45) && (pos2>=602  || pos2<-45 ) && (pos3>=602  || pos3<-45) && (pos4>=602  || pos4<-45)) {
+                pos2-=1
+                boneco2.style.left=pos2+"px"
+                console.log(pos2+" pos2")
             }else{
                 pos2-=1
-                bineco2.style.left=pos2+"px"
+                boneco2.style.left=pos2+"px"
+                console.log(pos2+" pos2")
             }
             
         }else {
-            if (pos2>601 & posf>5045) {
-                pos2+=2
-                bineco2.style.left=pos2+"px"
+            if (pos2>601 & posf>5400) {
+                pos2+=1
+                boneco2.style.left=pos2+"px"
+                console.log(pos2+" pos2")
                 
             } else if (pos2<=601 ) {
               pos2+=1
-              bineco2.style.left=pos2+"px"
+              boneco2.style.left=pos2+"px"
+              console.log(pos2+" pos2")
             }
         } 
-        
+        if(pos2<-45.5 ){
+            console.log(pos2+" pos2")
+            boneco2.remove()
+            clearInterval(idb2) 
+        }
     }
 
     function andarb3() {
@@ -317,27 +335,27 @@ function tmncbixin() {
         colizao3 = posf+pos3+45
         if(pos3<-45.5){
             
-            bineco3.remove()
+            boneco3.remove()
             clearInterval(idb3) 
         }
         
-        if (obst[0].offsetLeft==colizao3 && bineco3.offsetTop<=92){  
+        if (obst[0].offsetLeft==colizao3 && boneco3.offsetTop<=92){  
             vsfd3=true
             
-        } else if (obst[2].offsetLeft==colizao3 && bineco3.offsetTop<=92){
+        } else if (obst[2].offsetLeft==colizao3 && boneco3.offsetTop<=92){
             vsfd3=true    
-        } else if (obst[4].offsetLeft==colizao3 && bineco3.offsetTop<=92){ 
+        } else if (obst[4].offsetLeft==colizao3 && boneco3.offsetTop<=92){ 
             vsfd3=true  
-        } else if (obst[6].offsetLeft==colizao3 && bineco3.offsetTop<=92){
+        } else if (obst[6].offsetLeft==colizao3 && boneco3.offsetTop<=92){
             vsfd3=true
-        } else if (obst[1].offsetLeft==colizao3 && bineco3.offsetTop>=116){
+        } else if (obst[1].offsetLeft==colizao3 && boneco3.offsetTop>=116){
             vsfd3=true
             
-        }else if (obst[3].offsetLeft==colizao3 && bineco3.offsetTop>=116){
+        }else if (obst[3].offsetLeft==colizao3 && boneco3.offsetTop>=116){
             vsfd3=true
-        }else if (obst[5].offsetLeft==colizao3 && bineco3.offsetTop>=116){
+        }else if (obst[5].offsetLeft==colizao3 && boneco3.offsetTop>=116){
             vsfd3=true
-        }else if (obst[7].offsetLeft==colizao3 && bineco3.offsetTop>=116){
+        }else if (obst[7].offsetLeft==colizao3 && boneco3.offsetTop>=116){
             vsfd3=true
         }else{
             vsfd3=false
@@ -349,25 +367,25 @@ function tmncbixin() {
             // alert(vsfd+" "+colizao1+" "+obst[4].offsetLeft)
             // alert(vsfd+" "+pos3+" "+posf)
             if ((pos1>=602 || pos1<-45) &&  (pos2>=602  || pos2<-45 )&& (pos3>=602  || pos3<-45) && (pos4>=602  || pos4<-45)) {
-                pos3-=2 
-                bineco3.style.left=pos3+"px"
+                pos3-=1 
+                boneco3.style.left=pos3+"px"
                 
                 
             }else{
                 pos3-=1
-                bineco3.style.left=pos3+"px"
+                boneco3.style.left=pos3+"px"
                 
                 
             }
             
         }else {
-            if (pos3>601 & posf>5045) {
-                pos3+=2
-                bineco3.style.left=pos3+"px"
+            if (pos3>601 & posf>5400) {
+                pos3+=1
+                boneco3.style.left=pos3+"px"
                 
             } else if (pos3<=601 ) {
               pos3+=1
-              bineco3.style.left=pos3+"px"
+              boneco3.style.left=pos3+"px"
             }
         } 
         
@@ -378,26 +396,26 @@ function tmncbixin() {
         
         colizao4 = posf+pos4+45
         if(pos4<-45.5 ){
-            bineco4.remove()
+            boneco4.remove()
             clearInterval(idb4) 
         }
         
-        if (obst[0].offsetLeft==colizao4 && bineco4.offsetTop<=92){  
+        if (obst[0].offsetLeft==colizao4 && boneco4.offsetTop<=92){  
             vsfd4=true
             
-        } else if (obst[2].offsetLeft==colizao4 && bineco4.offsetTop<=92){
+        } else if (obst[2].offsetLeft==colizao4 && boneco4.offsetTop<=92){
             vsfd4=true    
-        } else if (obst[4].offsetLeft==colizao4 && bineco4.offsetTop<=92){ 
+        } else if (obst[4].offsetLeft==colizao4 && boneco4.offsetTop<=92){ 
             vsfd4=true  
-        } else if (obst[6].offsetLeft==colizao4 && bineco4.offsetTop<=92){
+        } else if (obst[6].offsetLeft==colizao4 && boneco4.offsetTop<=92){
             vsfd4=true
-        } else if (obst[1].offsetLeft==colizao4 && bineco4.offsetTop>=116){
+        } else if (obst[1].offsetLeft==colizao4 && boneco4.offsetTop>=116){
             vsfd4=true
-        }else if (obst[3].offsetLeft==colizao4 && bineco4.offsetTop>=116){
+        }else if (obst[3].offsetLeft==colizao4 && boneco4.offsetTop>=116){
             vsfd4=true
-        }else if (obst[5].offsetLeft==colizao4 && bineco4.offsetTop>=116){
+        }else if (obst[5].offsetLeft==colizao4 && boneco4.offsetTop>=116){
             vsfd4=true
-        }else if (obst[7].offsetLeft==colizao4 && bineco4.offsetTop>=116){
+        }else if (obst[7].offsetLeft==colizao4 && boneco4.offsetTop>=116){
             vsfd4=true
         }else{
             vsfd4=false
@@ -409,21 +427,21 @@ function tmncbixin() {
             // alert(vsfd+" "+colizao1+" "+obst[4].offsetLeft)
             // alert(vsfd+" "+pos4+" "+posf)
             if ((pos1>=602 || pos1<-45) &&  (pos2>=602  || pos2<-45 )&& (pos3>=602  || pos3<-45) && (pos4>=602  || pos4<-45)) {
-                pos4-=2 
-                bineco4.style.left=pos4+"px"
+                pos4-=1
+                boneco4.style.left=pos4+"px"
             }else{
                 pos4-=1
-                bineco4.style.left=pos4+"px"
+                boneco4.style.left=pos4+"px"
             }
             
         }else {
-            if (pos4>601 & posf>5045) {
-                pos4+=2
-                bineco4.style.left=pos4+"px"
+            if (pos4>601 & posf>5400) {
+                pos4+=1
+                boneco4.style.left=pos4+"px"
                 
             } else if (pos4<=601 ) {
               pos4+=1
-              bineco4.style.left=pos4+"px"
+              boneco4.style.left=pos4+"px"
             }
         } 
         

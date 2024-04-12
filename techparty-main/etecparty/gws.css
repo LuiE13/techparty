@@ -1,5 +1,5 @@
 .telaFundo{
-    width: 500%;
+    width: 5496px;
     height: 150px;
     background-color: aqua;
     display: flex;
@@ -46,9 +46,9 @@
 }
 
 .obstc{
-    width: 0.3%;
+    width: 10px;
     height: 30%;
     background-color: red;
     border: 1px solid black;
-    
+    cursor: pointer;
 }
