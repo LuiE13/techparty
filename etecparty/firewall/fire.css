@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-image: url(../jogo_lpc_versaofinal/imagens/fundotab.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.fundo{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+}
+
+.explic{
+    width: 80vw;
+    height: 30vh;
+    background: linear-gradient(to right, #3097eb , #4faaf5);
+    margin-left: 10vw;
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tutu{
+    display: flex;
+    width: 30%;
+    
+    margin-top: 3%;
+    flex-direction: row;
+}
+
+.tutu img{
+    margin-right: 3%;
+    
+}
+
+.esteira{
+    margin: 0 2.5%;
+    width: 20%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+.esteira p{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.arquio{
+    width: 75px;
+    height: 30px;
+}
+
+.sp1{
+    width: 75px;
+    height: 30px;
+    
+}
+
+
+.boneco{
+    width: 85px;
+    position: absolute;
+}
+
+.boneco img{
+    width: 100%;
+}
+
+.inthernet{
+    width: 100%;
+    height: 20%;
+}
+
+.linhas {
+    background-color: rgb(71, 172, 255);
+    height: 50%;
+    width: 2%;
+    margin: 0 15%;
+    display: inline-flex;
+    justify-content: center;
+}

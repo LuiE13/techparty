@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 85vh;
+    background-image: url('imagens/fundo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12.936610608020699vh;
+    margin-bottom: 6.468305304010349vh;
+}
+
+.botao-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

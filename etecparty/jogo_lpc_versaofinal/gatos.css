@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+}
+
+.gatinho{
+    width: 100px;
+}
+
+#gato1{
+    float: left;
+    margin: 20px;
+}
+.texto {
+    float: inline-end;
+    margin: 10px;
+    font-size: 20px;
+}
+
+#gato2{
+    float: right;
+    margin: 20px;
+}
+
+#gato3{
+    float: left;
+    margin: 20px;
+    margin-top: 430px;
+}
+
+#gato4{
+    float: right;
+    margin: 20px;
+    margin-top: 430px;
+}
+
+footer{
+    clear: both;
+}
+
+.imagemcentro {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0;
+}
+
+/* tabuleiro trilha */
+
+.trilha {
+    float: left;
+    margin: 300px;
+}

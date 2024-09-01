@@ -1,0 +1,123 @@
+.telaFundo{
+    width: 5496px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(imagens/fundotab.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.titulo h2{
+    margin-bottom: 4px;
+    margin-top: 10px;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+#o2{
+    transform: translateY(220%);
+}
+#o4{
+    transform: translateY(220%);
+}#o6{
+    transform: translateY(220%);
+}#o8{
+    transform: translateY(220%);
+}
+
+.boneco{
+    position: absolute;
+    width: 43px;
+    height: 35px;
+    border: none;
+    text-align: center;
+    z-index: 101;
+    background-image: url(imagens/bonzifofo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#boneco2{
+    background-image: url(imagens/cave.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top:82px;
+
+}
+#boneco3{
+    background-image: url(imagens/vermcav.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top:119px
+    
+}
+#boneco4{
+    background-image: url(imagens/macce.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top:156px
+}
+
+.obstc{
+    width: 10px;
+    height: 30%;
+    background-color: rgb(106, 214, 106);
+    border: 1px solid rgb(106, 214, 106);
+    cursor: pointer;
+}
+
+.tutorial{
+    background: linear-gradient(to right, #0179d8 , #3686c6);
+    width: 1000px;
+    height: 400px;
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 23px;
+    margin-left: 310px;
+    padding: 15px; 
+}
+
+.tutorial h1{
+    color: white;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.tutorial p{
+    color: white;
+    font-size: 25px;
+    margin: 30px;
+    margin-top: 45px;
+}
+
+.botaozinho{
+    margin: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(92, 228, 92);
+    width: 120px;
+    height: 70px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
